@@ -3,6 +3,7 @@ import ProjectCard from '@/components/project-card';
 import { Button } from '../ui/button';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
+import AnimateOnScroll from '../animate-on-scroll';
 
 const projects = [
   {
@@ -59,26 +60,30 @@ export default function PortfolioSection() {
   }));
 
   return (
-    <section id="portfolio" className="w-full py-12 md:py-24 lg:py-32 bg-background dark:bg-white text-black">
+    <section id="portfolio" className="w-full py-12 md:py-24 lg:py-32 bg-background dark:bg-white text-black overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="flex items-center justify-between mb-12 border-b border-border/40 pb-4">
-          <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl uppercase text-black">Portfólio</h2>
-          <Button asChild variant="link" className="hidden sm:inline-flex text-black">
-            <Link href="#">VER TODOS OS PROJETOS <ArrowUpRight className="ml-2 h-4 w-4" /></Link>
-          </Button>
-        </div>
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-8">
-          {portfolioProjects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              imageUrl={project.imageUrl}
-              imageHint={project.imageHint}
-              title={project.title}
-              category={project.category}
-              slug={project.slug}
-            />
-          ))}
-        </div>
+        <AnimateOnScroll animationClassName="animate-fade-in-up" className="[--animation-delay:200ms]">
+          <div className="flex items-center justify-between mb-12 border-b border-border/40 pb-4">
+            <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl uppercase text-black">Portfólio</h2>
+            <Button asChild variant="link" className="hidden sm:inline-flex text-black">
+              <Link href="#">VER TODOS OS PROJETOS <ArrowUpRight className="ml-2 h-4 w-4" /></Link>
+            </Button>
+          </div>
+        </AnimateOnScroll>
+        <AnimateOnScroll animationClassName="animate-fade-in-up" className="[--animation-delay:400ms]">
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-8">
+            {portfolioProjects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                imageUrl={project.imageUrl}
+                imageHint={project.imageHint}
+                title={project.title}
+                category={project.category}
+                slug={project.slug}
+              />
+            ))}
+          </div>
+        </AnimateOnScroll>
          <div className="mt-12 text-center sm:hidden">
             <Button asChild variant="link" className="text-black">
                 <Link href="#">VER TODOS OS PROJETOS <ArrowUpRight className="ml-2 h-4 w-4" /></Link>
