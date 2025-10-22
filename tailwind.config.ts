@@ -111,12 +111,34 @@ export default {
             transform: 'translateY(0)'
           }
         },
+        'fade-in-left': {
+          from: {
+            opacity: '0',
+            transform: 'translateX(-20px)'
+          },
+          to: {
+            opacity: '1',
+            transform: 'translateX(0)'
+          }
+        },
+        'fade-in-right': {
+          from: {
+            opacity: '0',
+            transform: 'translateX(20px)'
+          },
+          to: {
+            opacity: '1',
+            transform: 'translateX(0)'
+          }
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'fade-in-up': 'fade-in-up 1s ease-out var(--animation-delay, 0s) forwards',
         'fade-in-down': 'fade-in-down 1s ease-out var(--animation-delay, 0s) forwards',
+        'fade-in-left': 'fade-in-left 1s ease-out var(--animation-delay, 0s) forwards',
+        'fade-in-right': 'fade-in-right 1s ease-out var(--animation-delay, 0s) forwards',
       },
     },
   },
