@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const navLinks = [
   { href: '#about', label: 'Sobre' },
@@ -20,17 +20,17 @@ export default function Header() {
     if (href.startsWith('#')) {
       e.preventDefault();
       document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
-      setSheetOpen(false);
     }
+    setSheetOpen(false);
   };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-7xl mx-auto flex h-14 items-center justify-between px-4 md:px-6">
-        <Link href="#" className="font-bold tracking-wider" onClick={(e) => handleLinkClick(e, '#home')}>
+        <Link href="#home" className="font-bold tracking-wider" onClick={(e) => handleLinkClick(e, '#home')}>
           YAMAGUCHI
         </Link>
-        <nav className="hidden md:flex md:items-center md:gap-6">
+        <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href} className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground" onClick={(e) => handleLinkClick(e, link.href)}>
               {link.label}
@@ -47,7 +47,7 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right">
               <nav className="grid gap-6 text-lg font-medium mt-10 p-4">
-                <Link href="#" className="font-bold tracking-wider text-xl mb-4" onClick={(e) => handleLinkClick(e, '#home')}>
+                <Link href="#home" className="font-bold tracking-wider text-xl mb-4" onClick={(e) => handleLinkClick(e, '#home')}>
                   YAMAGUCHI
                 </Link>
                 {navLinks.map((link) => (
