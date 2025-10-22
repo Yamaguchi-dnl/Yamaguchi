@@ -12,11 +12,6 @@ export default function HeroSection() {
         <p className="max-w-[700px] mx-auto text-foreground md:text-lg tracking-tight">
           WEB DESIGNER & ESTRATEGISTA DIGITAL
         </p>
-        <div className="mt-8 flex justify-center">
-            <Button asChild size="lg">
-                <a href="#portfolio">VER TRABALHOS</a>
-            </Button>
-        </div>
       </div>
     </section>
   );
