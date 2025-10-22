@@ -87,25 +87,6 @@ const ParticlesBackground = () => {
         },
       },
       detectRetina: true,
-      absorbers: {
-        orbits: false,
-        destroy: true,
-        opacity: 0,
-        color: {
-          value: "#000000"
-        },
-        size: {
-          value: 5,
-          limit: 10,
-          density: 100,
-        },
-        position: [
-          { x: 20, y: 20 },
-          { x: 80, y: 80 },
-          { x: 80, y: 20 },
-          { x: 20, y: 80 },
-        ]
-      }
     }),
     [],
   );
@@ -116,7 +97,7 @@ const ParticlesBackground = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        className="absolute inset-0 -z-10"
+        className="absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_center,white_20%,transparent_70%)]"
       />
     );
   }
