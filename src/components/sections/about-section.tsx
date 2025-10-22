@@ -87,7 +87,7 @@ export default function AboutSection() {
                 data-ai-hint={aboutImage.imageHint}
                 width={600}
                 height={800}
-                className="object-cover w-full h-auto rounded-lg shadow-lg"
+                className="object-cover w-full h-[600px] rounded-lg shadow-lg"
               />
             </AnimateOnScroll>
           </div>
