@@ -48,29 +48,30 @@ const projects = [
     title: "Projeto Iota",
     category: "Fintech",
     slug: 'projeto-iota',
-  },
-  {
-    title: "Projeto Kappa",
-    category: "Café",
-    slug: 'projeto-kappa',
-  },
-  {
-    title: "Projeto Lambda",
-    category: "Fotografia",
-    slug: 'projeto-lambda',
-  },
-  {
-    title: "Projeto Mu",
-    category: "Moda",
-    slug: 'projeto-mu',
   }
 ];
 
 export default function PortfolioSection() {
-  const portfolioProjects = projectImages.map((image, index) => ({
+  const portfolioProjects = projectImages.slice(0, 9).map((image, index) => ({
     ...image,
     ...projects[index % projects.length]
   }));
+
+  const columns = [[], [], []] as (typeof portfolioProjects)[];
+  portfolioProjects.forEach((project, i) => {
+    if (i === 1 || i === 4 || i === 7) { // middle column
+       columns[1].push(project);
+    } else if (i % 2 === 0) { // left column
+      columns[0].push(project)
+    } else { // right column
+      columns[2].push(project)
+    }
+  })
+
+  // Manually balance to make middle taller
+  if (columns[0].length > 3) {
+    columns[2].push(columns[0].pop()!);
+  }
 
   return (
     <section id="portfolio" className="w-full py-12 md:py-24 lg:py-32 bg-background dark:bg-white text-black">
@@ -81,16 +82,20 @@ export default function PortfolioSection() {
             <Link href="#">VER TODOS OS PROJETOS</Link>
           </Button>
         </div>
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-8">
-          {portfolioProjects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              imageUrl={project.imageUrl}
-              imageHint={project.imageHint}
-              title={project.title}
-              category={project.category}
-              slug={project.slug}
-            />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {columns.map((col, i) => (
+            <div key={i} className="flex flex-col gap-8">
+              {col.map((project) => (
+                <ProjectCard
+                  key={project.id}
+                  imageUrl={project.imageUrl}
+                  imageHint={project.imageHint}
+                  title={project.title}
+                  category={project.category}
+                  slug={project.slug}
+                />
+              ))}
+            </div>
           ))}
         </div>
          <div className="mt-12 text-center sm:hidden">
