@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section id="home" className="w-full h-[calc(100vh-3.5rem)] flex flex-col justify-center items-center text-center px-4">
       <div className="space-y-4">
-        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter uppercase">
+        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-semibold tracking-tighter uppercase">
           <span className="block">DANIEL</span>
           <span className="block text-primary/80">YAMAGUCHI</span>
         </h1>

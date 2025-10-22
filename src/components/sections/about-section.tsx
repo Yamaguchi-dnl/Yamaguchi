@@ -7,7 +7,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Sobre Mim</h2>
+            <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl md:text-5xl">Sobre Mim</h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Sou um desenvolvedor apaixonado por criar experiências digitais bonitas e funcionais. Com experiência em tecnologias front-end e back-end, estou sempre em busca de novos desafios e oportunidades para aprender e crescer.
             </p>
