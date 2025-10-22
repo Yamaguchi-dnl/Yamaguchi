@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
-import { Menu } from 'lucide-react';
+import { Menu, ArrowRight } from 'lucide-react';
 import { ShineButton } from '../ui/shine-button';
 
 const navLinks = [
@@ -39,10 +39,11 @@ export default function Header() {
           ))}
         </nav>
         <div className="hidden md:flex items-center">
-           <a href="#contact">
-              <ShineButton>
-                ENTRAR EM CONTATO
-              </ShineButton>
+           <a href="#contact" className="flex items-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-muted-foreground" onClick={(e) => handleLinkClick(e, '#contact')}>
+              ENTRAR EM CONTATO
+              <span className="bg-primary text-primary-foreground rounded-full p-1.5 hover:bg-primary/90 transition-colors">
+                <ArrowRight className="h-4 w-4" />
+              </span>
             </a>
         </div>
         <div className="md:hidden">
@@ -63,10 +64,11 @@ export default function Header() {
                     {link.label}
                   </a>
                 ))}
-                 <a href="#contact" onClick={(e) => handleLinkClick(e, '#contact')}>
-                    <ShineButton>
-                      ENTRAR EM CONTATO
-                    </ShineButton>
+                 <a href="#contact" className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground" onClick={(e) => handleLinkClick(e, '#contact')}>
+                    ENTRAR EM CONTATO
+                     <span className="bg-primary text-primary-foreground rounded-full p-1.5 hover:bg-primary/90 transition-colors">
+                        <ArrowRight className="h-4 w-4" />
+                    </span>
                   </a>
               </nav>
             </SheetContent>
