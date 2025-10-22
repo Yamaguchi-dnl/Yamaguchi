@@ -5,6 +5,7 @@ import ServicesSection from "@/components/sections/services-section";
 import PortfolioSection from "@/components/sections/portfolio-section";
 import ContactSection from "@/components/sections/contact-section";
 import ParticlesBackground from "@/components/particles-background";
+import AboutSection from "@/components/sections/about-section";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Header />
         <main className="flex-1">
           <HeroSection />
+          <AboutSection />
           <PortfolioSection />
           <ServicesSection />
           <ContactSection />

@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Menu, ArrowUpRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
+  { href: '#about', label: 'Sobre' },
   { href: '#portfolio', label: 'Portfólio' },
   { href: '#services', label: 'Serviços' },
   { href: '#contact', label: 'Contato' },
