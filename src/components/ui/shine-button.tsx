@@ -11,7 +11,7 @@ const ShineButton = React.forwardRef<
     <button
       ref={ref}
       className={cn(
-        "relative inline-flex items-center justify-center rounded-xl border border-white/20 bg-black px-8 py-3 text-lg font-medium text-white transition-all focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50",
+        "relative inline-flex h-11 items-center justify-center rounded-full border border-white/20 bg-black px-8 py-2 text-sm font-medium text-white transition-all focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50",
         "shadow-[0_0_0_1px_#ffffff10_inset,0_0_0_1px_#ffffff10_inset,0_1px_1px_#ffffff08_inset,0_-1px_1px_#00000080_inset]",
         "hover:shadow-[0_0_0_1px_#ffffff10_inset,0_0_0_1px_#ffffff10_inset,0_2px_2px_#ffffff10_inset,0_-2px_2px_#00000080_inset]",
         "active:shadow-[0_0_0_1px_#ffffff10_inset,0_0_0_1px_#ffffff10_inset,0_1px_1px_#ffffff08_inset,0_-1px_1px_#00000080_inset]",
