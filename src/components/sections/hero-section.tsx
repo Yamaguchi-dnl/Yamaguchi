@@ -6,10 +6,10 @@ export default function HeroSection() {
     <section id="home" className="w-full h-[calc(100vh-3.5rem)] flex flex-col justify-center items-center text-center px-4">
       <div className="space-y-4">
         <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[110px] font-semibold tracking-tighter uppercase">
-          DANIEL <span className="text-primary/80">YAMAGUCHI</span>
+          DANIEL YAMAGUCHI
         </h1>
         <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl tracking-tight">
-          DESENVOLVEDOR FULL-STACK & CRIADOR DE SOLUÇÕES DIGITAIS
+          WEB DESIGNER & ESTRATEGISTA DIGITAL
         </p>
       </div>
       <div className="mt-8 flex flex-col sm:flex-row gap-4">
