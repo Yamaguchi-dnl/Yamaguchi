@@ -38,7 +38,7 @@ export default function ServicesSection() {
   }));
 
   return (
-    <section id="services" className="w-full py-12 md:py-24 lg:py-32">
+    <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-background">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between mb-12 border-b border-border/40 pb-4">
           <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl uppercase">Serviços</h2>

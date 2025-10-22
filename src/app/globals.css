@@ -88,4 +88,8 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+  .dark body {
+    background-color: hsl(var(--background));
+  }
 }
