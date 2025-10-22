@@ -9,9 +9,6 @@ export default function HeroSection() {
           <span className="h-2 w-2 rounded-full bg-white"></span>
           <span>Crafting Unique Brand Identities</span>
         </div>
-        <p className="max-w-[700px] mx-auto text-foreground md:text-lg tracking-tight mb-2">
-          WEB DESIGNER & ESTRATEGISTA DIGITAL
-        </p>
         <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[110px] font-semibold tracking-tighter uppercase">
           DANIEL YAMAGUCHI
         </h1>
