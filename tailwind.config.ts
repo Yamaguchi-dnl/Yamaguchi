@@ -94,7 +94,7 @@ export default {
         'fade-in-up': {
           from: {
             opacity: '0',
-            transform: 'translateY(20px)'
+            transform: 'translateY(40px)'
           },
           to: {
             opacity: '1',
@@ -104,7 +104,7 @@ export default {
         'fade-in-down': {
           from: {
             opacity: '0',
-            transform: 'translateY(-20px)'
+            transform: 'translateY(-40px)'
           },
           to: {
             opacity: '1',
@@ -114,7 +114,7 @@ export default {
         'fade-in-left': {
           from: {
             opacity: '0',
-            transform: 'translateX(-20px)'
+            transform: 'translateX(-40px)'
           },
           to: {
             opacity: '1',
@@ -124,7 +124,7 @@ export default {
         'fade-in-right': {
           from: {
             opacity: '0',
-            transform: 'translateX(20px)'
+            transform: 'translateX(40px)'
           },
           to: {
             opacity: '1',
