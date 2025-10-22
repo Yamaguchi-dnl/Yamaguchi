@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "about-portrait",
+      "description": "Retrato de Daniel Vieira Yamag7uchi",
+      "imageUrl": "https://images.unsplash.com/photo-1583195763986-0231686dcd43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjExNDUzMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "project-1",
+      "description": "Uma plataforma de e-commerce inovadora com design moderno e experiência de usuário perfeita.",
+      "imageUrl": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3ZWIlMjBkZXNpZ258ZW58MHx8fHwxNzYxMDcxMTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "web design"
+    },
+    {
+      "id": "project-2",
+      "description": "Uma aplicação colaborativa de gestão de tarefas para aumentar a produtividade da equipe.",
+      "imageUrl": "https://images.unsplash.com/photo-1759256243611-502772ac391b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXNoYm9hcmQlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzYxMDIyMjY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dashboard interface"
+    },
+    {
+      "id": "project-3",
+      "description": "Uma plataforma de blog e conteúdo pessoal construída com um CMS headless para performance rápida.",
+      "imageUrl": "https://images.unsplash.com/photo-1729575846513-e9ed228f1316?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtaW5pbWFsaXN0JTIwd2Vic2l0ZXxlbnwwfHx8fDE3NjEwMzI0Njl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist website"
+    }
+  ]
 }
