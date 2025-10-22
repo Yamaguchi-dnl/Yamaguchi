@@ -4,7 +4,8 @@ import React from 'react';
 import Link from 'next/link';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
+import { ShineButton } from '../ui/shine-button';
 
 const navLinks = [
   { href: '#portfolio', label: 'Portfólio' },
@@ -30,13 +31,20 @@ export default function Header() {
         <Link href="#home" className="font-bold tracking-wider" onClick={(e) => handleLinkClick(e, '#home')}>
           YAMAGUCHI
         </Link>
-        <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6">
+        <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href} className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground" onClick={(e) => handleLinkClick(e, link.href)}>
               {link.label}
             </a>
           ))}
         </nav>
+        <div className="hidden md:flex items-center">
+           <a href="#contact">
+              <ShineButton>
+                ENTRAR EM CONTATO
+              </ShineButton>
+            </a>
+        </div>
         <div className="md:hidden">
           <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
@@ -55,6 +63,11 @@ export default function Header() {
                     {link.label}
                   </a>
                 ))}
+                 <a href="#contact" onClick={(e) => handleLinkClick(e, '#contact')}>
+                    <ShineButton>
+                      ENTRAR EM CONTATO
+                    </ShineButton>
+                  </a>
               </nav>
             </SheetContent>
           </Sheet>

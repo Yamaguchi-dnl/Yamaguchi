@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
 import ParticlesBackground from '../particles-background';
-import { ShineButton } from '../ui/shine-button';
 
 export default function HeroSection() {
   return (
@@ -13,15 +12,10 @@ export default function HeroSection() {
         <p className="max-w-[700px] mx-auto text-foreground md:text-lg tracking-tight">
           WEB DESIGNER & ESTRATEGISTA DIGITAL
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-8 flex justify-center">
             <Button asChild size="lg">
                 <a href="#portfolio">VER TRABALHOS</a>
             </Button>
-            <a href="#contact">
-              <ShineButton>
-                ENTRAR EM CONTATO
-              </ShineButton>
-            </a>
         </div>
       </div>
     </section>
