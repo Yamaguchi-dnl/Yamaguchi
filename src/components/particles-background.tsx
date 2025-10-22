@@ -97,7 +97,7 @@ const ParticlesBackground = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        className="absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_center,white_20%,transparent_70%)]"
+        className="absolute inset-0 -z-10 [mask-image:linear-gradient(to_bottom,transparent_0%,white_20%,white_80%,transparent_100%)]"
       />
     );
   }
