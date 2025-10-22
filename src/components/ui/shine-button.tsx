@@ -20,7 +20,7 @@ const ShineButton = React.forwardRef<
       )}
       {...props}
     >
-      <span className="absolute -top-px left-1/2 h-1/2 w-3/4 -translate-x-1/2 bg-[radial-gradient(closest-side,rgba(255,255,255,0.1),transparent)] opacity-60"></span>
+      <span className="absolute -top-px left-1/2 h-1/2 w-3/4 -translate-x-1/2 bg-[radial-gradient(closest-side,rgba(255,255,255,0.15),transparent)] opacity-80"></span>
       {props.children}
     </button>
   );
