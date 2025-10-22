@@ -27,17 +27,29 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-7xl mx-auto flex h-14 items-center justify-between px-4 md:px-6">
-        <Link href="#home" className="font-bold tracking-wider" onClick={(e) => handleLinkClick(e, '#home')}>
-          YAMAGUCHI
+        {/* Left Column */}
+        <div className="hidden md:flex flex-1 justify-start">
+            <Link href="#home" className="font-bold tracking-wider" onClick={(e) => handleLinkClick(e, '#home')}>
+            YAMAGUCHI
+            </Link>
+        </div>
+
+        {/* Mobile Logo */}
+        <Link href="#home" className="font-bold tracking-wider md:hidden" onClick={(e) => handleLinkClick(e, '#home')}>
+            YAMAGUCHI
         </Link>
-        <nav className="hidden md:flex items-center gap-6">
+        
+        {/* Center Column (Navigation) */}
+        <nav className="hidden md:flex flex-1 justify-center items-center gap-6">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href} className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground" onClick={(e) => handleLinkClick(e, link.href)}>
               {link.label}
             </a>
           ))}
         </nav>
-        <div className="hidden md:flex items-center">
+
+        {/* Right Column */}
+        <div className="hidden md:flex flex-1 justify-end items-center">
            <a href="#contact" className="flex items-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-muted-foreground" onClick={(e) => handleLinkClick(e, '#contact')}>
               ENTRAR EM CONTATO
               <span className="bg-primary text-primary-foreground rounded-full p-1.5 hover:bg-primary/90 transition-colors">
@@ -45,6 +57,8 @@ export default function Header() {
               </span>
             </a>
         </div>
+        
+        {/* Mobile Menu */}
         <div className="md:hidden">
           <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
