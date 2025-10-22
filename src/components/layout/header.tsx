@@ -1,10 +1,11 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Menu, ArrowUpRight } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 const navLinks = [
   { href: '#portfolio', label: 'Portfólio' },
@@ -14,9 +15,19 @@ const navLinks = [
 
 export default function Header() {
   const [isSheetOpen, setSheetOpen] = React.useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    // For smooth scrolling on the same page
     if (href.startsWith('#')) {
       e.preventDefault();
       document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
@@ -25,7 +36,10 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className={cn(
+      "sticky top-0 z-50 w-full transition-all duration-300 ease-in-out",
+      isScrolled ? "border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" : "border-b border-transparent"
+    )}>
       <div className="max-w-7xl mx-auto flex h-14 items-center justify-between px-4 md:px-6">
         {/* Left Column */}
         <div className="hidden md:flex flex-1 justify-start">
