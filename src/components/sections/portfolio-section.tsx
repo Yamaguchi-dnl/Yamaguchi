@@ -1,47 +1,62 @@
 import { projectImages } from '@/lib/placeholder-images';
 import ProjectCard from '@/components/project-card';
+import { Button } from '../ui/button';
+import Link from 'next/link';
 
-const projects = [
+const services = [
   {
-    title: "Plataforma de E-commerce",
-    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe'],
+    title: "Web Design",
+    description: "Criação de interfaces digitais modernas, intuitivas e responsivas, focadas na experiência do usuário.",
+    tags: ['UI/UX', 'Figma', 'React'],
   },
   {
-    title: "App de Gestão de Tarefas",
-    tags: ['React', 'Firebase', 'Material UI'],
+    title: "Desenvolvimento Web",
+    description: "Desenvolvimento de sites e aplicações web de alta performance com as tecnologias mais recentes.",
+    tags: ['Next.js', 'TypeScript', 'Node.js'],
   },
   {
-    title: "Blog Pessoal",
-    tags: ['Gatsby', 'GraphQL', 'Contentful'],
+    title: "Estrategista Digital",
+    description: "Planejamento e execução de estratégias digitais para impulsionar o crescimento e o engajamento da marca.",
+    tags: ['SEO', 'Marketing de Conteúdo', 'Analytics'],
+  },
+   {
+    title: "E-commerce",
+    description: "Soluções completas para lojas virtuais, desde o layout até a integração com sistemas de pagamento.",
+    tags: ['Shopify', 'WooCommerce', 'Stripe'],
   }
 ];
 
 export default function PortfolioSection() {
-  const portfolioProjects = projectImages.map((image, index) => ({
+  const portfolioServices = projectImages.slice(0, 4).map((image, index) => ({
     ...image,
-    ...projects[index % projects.length] // Cycle through project details
+    ...services[index % services.length]
   }));
 
   return (
     <section id="portfolio" className="w-full py-12 md:py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <h2 className="text-3xl font-semibold tracking-tighter sm:text-5xl">Meu Portfólio</h2>
-          <p className="max-w-[900px] text-muted-foreground md:text-lg tracking-tight">
-            Confira alguns dos projetos em que trabalhei recentemente.
-          </p>
+        <div className="flex items-center justify-between mb-12 border-b border-border/40 pb-4">
+          <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl uppercase">Selected Works</h2>
+          <Button asChild variant="link" className="hidden sm:inline-flex">
+            <Link href="#">SEE ALL WORKS</Link>
+          </Button>
         </div>
-        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {portfolioProjects.map((project) => (
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2">
+          {portfolioServices.map((service) => (
             <ProjectCard
-              key={project.id}
-              imageUrl={project.imageUrl}
-              imageHint={project.imageHint}
-              title={project.title}
-              description={project.description}
-              tags={project.tags}
+              key={service.id}
+              imageUrl={service.imageUrl}
+              imageHint={service.imageHint}
+              title={service.title}
+              description={service.description}
+              tags={service.tags}
             />
           ))}
+        </div>
+         <div className="mt-12 text-center sm:hidden">
+            <Button asChild variant="link">
+                <Link href="#">SEE ALL WORKS</Link>
+            </Button>
         </div>
       </div>
     </section>
