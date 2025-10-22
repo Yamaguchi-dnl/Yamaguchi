@@ -46,8 +46,8 @@ export default function PortfolioSection() {
     <section id="portfolio" className="w-full py-12 md:py-24 lg:py-32 bg-background dark:bg-white text-black">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between mb-12 border-b border-border/40 pb-4">
-          <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl uppercase">Portfólio</h2>
-          <Button asChild variant="link" className="hidden sm:inline-flex">
+          <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl uppercase text-black">Portfólio</h2>
+          <Button asChild variant="link" className="hidden sm:inline-flex text-black">
             <Link href="#">VER TODOS OS PROJETOS</Link>
           </Button>
         </div>
@@ -64,7 +64,7 @@ export default function PortfolioSection() {
           ))}
         </div>
          <div className="mt-12 text-center sm:hidden">
-            <Button asChild variant="link">
+            <Button asChild variant="link" className="text-black">
                 <Link href="#">VER TODOS OS PROJETOS</Link>
             </Button>
         </div>
