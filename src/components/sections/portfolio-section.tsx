@@ -2,7 +2,7 @@ import { projectImages } from '@/lib/placeholder-images';
 import ProjectCard from '@/components/project-card';
 import { Button } from '../ui/button';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 const projects = [
   {
@@ -64,7 +64,7 @@ export default function PortfolioSection() {
         <div className="flex items-center justify-between mb-12 border-b border-border/40 pb-4">
           <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl uppercase text-black">Portfólio</h2>
           <Button asChild variant="link" className="hidden sm:inline-flex text-black">
-            <Link href="#">VER TODOS OS PROJETOS <ArrowRight className="ml-2 h-4 w-4" /></Link>
+            <Link href="#">VER TODOS OS PROJETOS <ArrowUpRight className="ml-2 h-4 w-4" /></Link>
           </Button>
         </div>
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-8">
@@ -81,7 +81,7 @@ export default function PortfolioSection() {
         </div>
          <div className="mt-12 text-center sm:hidden">
             <Button asChild variant="link" className="text-black">
-                <Link href="#">VER TODOS OS PROJETOS <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                <Link href="#">VER TODOS OS PROJETOS <ArrowUpRight className="ml-2 h-4 w-4" /></Link>
             </Button>
         </div>
       </div>
