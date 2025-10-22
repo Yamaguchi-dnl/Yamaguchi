@@ -4,8 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
-import { Menu, ArrowRight } from 'lucide-react';
-import { ShineButton } from '../ui/shine-button';
+import { Menu, ArrowUpRight } from 'lucide-react';
 
 const navLinks = [
   { href: '#portfolio', label: 'Portfólio' },
@@ -42,7 +41,7 @@ export default function Header() {
            <a href="#contact" className="flex items-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-muted-foreground" onClick={(e) => handleLinkClick(e, '#contact')}>
               ENTRAR EM CONTATO
               <span className="bg-primary text-primary-foreground rounded-full p-1.5 hover:bg-primary/90 transition-colors">
-                <ArrowRight className="h-4 w-4" />
+                <ArrowUpRight className="h-4 w-4" />
               </span>
             </a>
         </div>
@@ -67,7 +66,7 @@ export default function Header() {
                  <a href="#contact" className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground" onClick={(e) => handleLinkClick(e, '#contact')}>
                     ENTRAR EM CONTATO
                      <span className="bg-primary text-primary-foreground rounded-full p-1.5 hover:bg-primary/90 transition-colors">
-                        <ArrowRight className="h-4 w-4" />
+                        <ArrowUpRight className="h-4 w-4" />
                     </span>
                   </a>
               </nav>
