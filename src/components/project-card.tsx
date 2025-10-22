@@ -20,9 +20,8 @@ const ProjectCard: FC<ProjectCardProps> = ({ imageUrl, imageHint, title, slug })
           alt={title}
           data-ai-hint={imageHint}
           width={600}
-          height={0} // Set height to 0 to maintain aspect ratio based on width
+          height={400}
           className="object-cover w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105"
-          style={{ height: 'auto' }}
         />
         <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
         <div className="absolute inset-0 flex flex-col justify-end p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
