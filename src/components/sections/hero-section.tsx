@@ -9,7 +9,7 @@ export default function HeroSection() {
           <span className="block">DANIEL</span>
           <span className="block text-primary/80">YAMAGUCHI</span>
         </h1>
-        <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
+        <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl tracking-tight">
           DESENVOLVEDOR FULL-STACK & CRIADOR DE SOLUÇÕES DIGITAIS
         </p>
       </div>
