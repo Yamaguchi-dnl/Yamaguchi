@@ -87,6 +87,25 @@ const ParticlesBackground = () => {
         },
       },
       detectRetina: true,
+      absorbers: {
+        orbits: false,
+        destroy: true,
+        opacity: 0,
+        color: {
+          value: "#000000"
+        },
+        size: {
+          value: 5,
+          limit: 10,
+          density: 100,
+        },
+        position: [
+          { x: 20, y: 20 },
+          { x: 80, y: 80 },
+          { x: 80, y: 20 },
+          { x: 20, y: 80 },
+        ]
+      }
     }),
     [],
   );
