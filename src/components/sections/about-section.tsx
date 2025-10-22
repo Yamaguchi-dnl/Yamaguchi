@@ -46,7 +46,7 @@ export default function AboutSection() {
           <div className="lg:col-span-3 flex flex-col gap-8">
             <AnimateOnScroll animationClassName="animate-fade-in-up">
               <h2 className="text-3xl sm:text-4xl font-semibold tracking-tighter uppercase">Sobre Mim</h2>
-              <p className="mt-4 text-muted-foreground md:text-lg tracking-tight">
+              <p className="mt-4 text-muted-foreground tracking-tight">
                 Sou Daniel Yamaguchi, um apaixonado Web Designer e Estrategista Digital. Minha especialidade é criar identidades visuais e experiências digitais que não apenas cativam e inspiram, mas também combinam criatividade com estratégia para elevar marcas a um novo patamar.
               </p>
             </AnimateOnScroll>
