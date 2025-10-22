@@ -8,10 +8,10 @@ export default function AboutSection() {
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="space-y-4">
             <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl md:text-5xl">Sobre Mim</h2>
-            <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[600px] text-muted-foreground md:text-lg tracking-tight">
               Sou um desenvolvedor apaixonado por criar experiências digitais bonitas e funcionais. Com experiência em tecnologias front-end e back-end, estou sempre em busca de novos desafios e oportunidades para aprender e crescer.
             </p>
-            <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[600px] text-muted-foreground md:text-lg tracking-tight">
               Quando não estou codificando, gosto de explorar novas tecnologias, contribuir para projetos de código aberto e tomar um bom café.
             </p>
           </div>

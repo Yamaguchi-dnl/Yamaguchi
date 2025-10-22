@@ -27,7 +27,7 @@ export default function PortfolioSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-semibold tracking-tighter sm:text-5xl">Meu Portfólio</h2>
-          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed tracking-tight">
+          <p className="max-w-[900px] text-muted-foreground md:text-lg tracking-tight">
             Confira alguns dos projetos em que trabalhei recentemente.
           </p>
         </div>
