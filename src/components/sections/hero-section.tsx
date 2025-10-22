@@ -6,9 +6,9 @@ export default function HeroSection() {
         <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[110px] font-semibold tracking-tighter uppercase animate-fade-in-down">
           DANIEL YAMAGUCHI
         </h1>
-        <div className="mt-8 items-center gap-2 rounded-full border border-white/10 bg-black/30 px-4 py-2 text-sm text-white/80 shadow-[0_0_20px_theme(colors.black/20%)] backdrop-blur-sm transition-transform duration-300 group-hover:scale-105 animate-fade-in-up [animation-delay:200ms]">
-          <span>WEB DESIGNER & ESTRATEGISTA DIGITAL</span>
-        </div>
+        <p className="mt-8 text-sm text-white/80 animate-fade-in-up [animation-delay:200ms]">
+          WEB DESIGNER & ESTRATEGISTA DIGITAL
+        </p>
       </div>
     </section>
   );
