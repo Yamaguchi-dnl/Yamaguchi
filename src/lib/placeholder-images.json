@@ -41,6 +41,42 @@
       "description": "Uma bicicleta em uma caixa de vidro.",
       "imageUrl": "https://images.unsplash.com/photo-1593699923348-936a5a2a2c3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNTc5fDB8MXxzZWFyY2h8NXx8YmljeWNsZSUyMGFydHxlbnwwfHx8fDE2Nzg4ODY0NzQ&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "bicycle art"
+    },
+    {
+      "id": "project-7",
+      "description": "Uma visão arquitetônica de um edifício moderno.",
+      "imageUrl": "https://images.unsplash.com/photo-1511285560921-4c90ad4d342d?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "modern architecture"
+    },
+    {
+      "id": "project-8",
+      "description": "Fotografia de produto para uma marca de cosméticos.",
+      "imageUrl": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "cosmetics product"
+    },
+    {
+      "id": "project-9",
+      "description": "Interface de aplicativo móvel para uma startup de fintech.",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-169543058550?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "fintech app"
+    },
+    {
+      "id": "project-10",
+      "description": "Branding e design de embalagem para uma marca de café.",
+      "imageUrl": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1887&auto=format&fit=crop",
+      "imageHint": "coffee branding"
+    },
+    {
+      "id": "project-11",
+      "description": "Site de portfólio para um fotógrafo.",
+      "imageUrl": "https://images.unsplash.com/photo-1495404453595-0a914a872584?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "photography portfolio"
+    },
+    {
+      "id": "project-12",
+      "description": "Campanha de marketing de mídia social para uma marca de moda.",
+      "imageUrl": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "fashion campaign"
     }
   ]
 }

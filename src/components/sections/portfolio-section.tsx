@@ -33,11 +33,41 @@ const projects = [
     title: "Projeto Zeta",
     category: "Mobile App",
     slug: 'projeto-zeta',
+  },
+  {
+    title: "Projeto Eta",
+    category: "Arquitetura",
+    slug: 'projeto-eta',
+  },
+  {
+    title: "Projeto Theta",
+    category: "Cosméticos",
+    slug: 'projeto-theta',
+  },
+  {
+    title: "Projeto Iota",
+    category: "Fintech",
+    slug: 'projeto-iota',
+  },
+  {
+    title: "Projeto Kappa",
+    category: "Café",
+    slug: 'projeto-kappa',
+  },
+  {
+    title: "Projeto Lambda",
+    category: "Fotografia",
+    slug: 'projeto-lambda',
+  },
+  {
+    title: "Projeto Mu",
+    category: "Moda",
+    slug: 'projeto-mu',
   }
 ];
 
 export default function PortfolioSection() {
-  const portfolioProjects = projectImages.slice(0, 6).map((image, index) => ({
+  const portfolioProjects = projectImages.map((image, index) => ({
     ...image,
     ...projects[index % projects.length]
   }));
