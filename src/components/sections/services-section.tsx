@@ -2,6 +2,7 @@ import { projectImages } from '@/lib/placeholder-images';
 import ServiceCard from '@/components/service-card';
 import { Button } from '../ui/button';
 import Link from 'next/link';
+import { ArrowUpRight } from 'lucide-react';
 
 const services = [
   {
@@ -42,7 +43,7 @@ export default function ServicesSection() {
         <div className="flex items-center justify-between mb-12 border-b border-border/40 pb-4">
           <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl uppercase">Serviços</h2>
           <Button asChild variant="link" className="hidden sm:inline-flex">
-            <Link href="#">VER TODOS OS SERVIÇOS</Link>
+            <Link href="#">VER TODOS OS SERVIÇOS <ArrowUpRight className="ml-2 h-4 w-4" /></Link>
           </Button>
         </div>
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2">
@@ -60,7 +61,7 @@ export default function ServicesSection() {
         </div>
          <div className="mt-12 text-center sm:hidden">
             <Button asChild variant="link">
-                <Link href="#">VER TODOS OS SERVIÇOS</Link>
+                <Link href="#">VER TODOS OS SERVIÇOS <ArrowUpRight className="ml-2 h-4 w-4" /></Link>
             </Button>
         </div>
       </div>
