@@ -23,8 +23,8 @@ const ProjectCard: FC<ProjectCardProps> = ({ imageUrl, imageHint, title, descrip
           alt={description}
           data-ai-hint={imageHint}
           width={600}
-          height={400}
-          className="object-cover w-full aspect-video"
+          height={600}
+          className="object-cover w-full aspect-square"
         />
       </CardContent>
       <div className="flex flex-col flex-1 p-6">
