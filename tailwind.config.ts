@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        '110px': '110px',
+      },
       fontFamily: {
         body: ['Inter', 'sans-serif'],
         headline: ['Inter', 'sans-serif'],
