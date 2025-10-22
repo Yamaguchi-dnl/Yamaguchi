@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="w-full py-6 border-t border-border/40">
       <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-muted-foreground text-center sm:text-left">
-          &copy; {new Date().getFullYear()} Daniel Vieira Yamag7uchi. Todos os direitos reservados.
+          &copy; {new Date().getFullYear()} DANIEL YAMAGUCHI. TODOS OS DIREITOS RESERVADOS.
         </p>
         <div className="flex items-center gap-4">
           <Link href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
