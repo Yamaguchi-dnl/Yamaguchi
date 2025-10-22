@@ -7,7 +7,7 @@ export default function HeroSection() {
       <div className="z-10 flex flex-col items-center">
         <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/30 px-4 py-2 text-sm text-white/80 shadow-[0_0_20px_theme(colors.black/20%)] backdrop-blur-sm transition-transform duration-300 group-hover:scale-105">
           <span className="h-2 w-2 rounded-full bg-white"></span>
-          <span>Crafting Unique Brand Identities</span>
+          <span>WEB DESIGNER & ESTRATEGISTA DIGITAL</span>
         </div>
         <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[110px] font-semibold tracking-tighter uppercase">
           DANIEL YAMAGUCHI
