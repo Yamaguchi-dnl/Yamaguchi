@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import ParticlesBackground from '../particles-background';
+import { ShineButton } from '../ui/shine-button';
 
 export default function HeroSection() {
   return (
@@ -16,9 +17,11 @@ export default function HeroSection() {
             <Button asChild size="lg">
                 <a href="#portfolio">VER TRABALHOS</a>
             </Button>
-            <Button asChild variant="outline" size="lg">
-            <a href="#contact">ENTRAR EM CONTATO</a>
-            </Button>
+            <a href="#contact">
+              <ShineButton>
+                ENTRAR EM CONTATO
+              </ShineButton>
+            </a>
         </div>
       </div>
     </section>
