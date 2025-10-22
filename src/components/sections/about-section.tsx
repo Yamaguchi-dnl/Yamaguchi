@@ -38,7 +38,7 @@ export default function AboutSection() {
   }
   
   return (
-    <section id="about" className="w-full py-12 md:py-24 lg:py-32">
+    <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-background dark:bg-white text-black">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
           
