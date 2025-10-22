@@ -12,14 +12,14 @@ interface ProjectCardProps {
 
 const ProjectCard: FC<ProjectCardProps> = ({ imageUrl, imageHint, title, category, slug }) => {
   return (
-    <Link href={`/portfolio/${slug}`} className="group relative block overflow-hidden">
+    <Link href={`/portfolio/${slug}`} className="group relative block overflow-hidden break-inside-avoid mb-8">
         <Image
           src={imageUrl}
           alt={title}
           data-ai-hint={imageHint}
           width={600}
-          height={600}
-          className="object-cover w-full h-full aspect-square transition-transform duration-300 ease-in-out group-hover:scale-105"
+          height={400}
+          className="object-cover w-full h-auto transition-transform duration-300 ease-in-out group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
         <div className="absolute inset-0 flex flex-col justify-end p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">

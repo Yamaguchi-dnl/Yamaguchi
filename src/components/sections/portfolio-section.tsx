@@ -81,7 +81,7 @@ export default function PortfolioSection() {
             <Link href="#">VER TODOS OS PROJETOS</Link>
           </Button>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-8">
           {portfolioProjects.map((project) => (
             <ProjectCard
               key={project.id}
