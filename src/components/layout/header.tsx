@@ -42,16 +42,14 @@ export default function Header() {
     )}>
       <div className="max-w-7xl mx-auto flex h-14 items-center justify-between px-4 md:px-6">
         {/* Left Column */}
-        <div className="hidden md:flex flex-1 justify-start">
-            <Link href="#home" className="font-bold tracking-wider" onClick={(e) => handleLinkClick(e, '#home')}>
-            YAMAGUCHI
-            </Link>
+        <div className="flex flex-1 justify-start">
+            <a href="#home" className="flex items-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-muted-foreground invisible md:hidden" onClick={(e) => handleLinkClick(e, '#contact')}>
+              ENTRAR EM CONTATO
+              <span className="bg-primary text-primary-foreground rounded-full p-1.5 hover:bg-primary/90 transition-colors">
+                <ArrowUpRight className="h-4 w-4" />
+              </span>
+            </a>
         </div>
-
-        {/* Mobile Logo */}
-        <Link href="#home" className="font-bold tracking-wider md:hidden" onClick={(e) => handleLinkClick(e, '#home')}>
-            YAMAGUCHI
-        </Link>
         
         {/* Center Column (Navigation) */}
         <nav className="hidden md:flex flex-1 justify-center items-center gap-6">
@@ -73,7 +71,7 @@ export default function Header() {
         </div>
         
         {/* Mobile Menu */}
-        <div className="md:hidden">
+        <div className="md:hidden flex flex-1 justify-end">
           <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
@@ -83,9 +81,6 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right">
               <nav className="grid gap-6 text-lg font-medium mt-10 p-4">
-                <Link href="#home" className="font-bold tracking-wider text-xl mb-4" onClick={(e) => handleLinkClick(e, '#home')}>
-                  YAMAGUCHI
-                </Link>
                 {navLinks.map((link) => (
                   <a key={link.href} href={link.href} className="text-muted-foreground transition-colors hover:text-foreground" onClick={(e) => handleLinkClick(e, link.href)}>
                     {link.label}
