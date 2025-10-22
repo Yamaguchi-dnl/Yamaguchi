@@ -8,7 +8,7 @@ export default function HeroSection() {
         <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[110px] font-semibold tracking-tighter uppercase">
           DANIEL YAMAGUCHI
         </h1>
-        <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl tracking-tight">
+        <p className="max-w-[700px] mx-auto text-muted-foreground md:text-lg tracking-tight">
           WEB DESIGNER & ESTRATEGISTA DIGITAL
         </p>
       </div>
