@@ -6,28 +6,38 @@ import Link from 'next/link';
 const projects = [
   {
     title: "Projeto Alpha",
-    description: "Uma plataforma de e-commerce inovadora com design moderno e experiência de usuário perfeita.",
-    tags: ['E-commerce', 'Next.js', 'Stripe'],
+    category: "E-commerce",
+    slug: 'projeto-alpha',
   },
   {
     title: "Projeto Beta",
-    description: "Uma aplicação colaborativa de gestão de tarefas para aumentar a produtividade da equipe.",
-    tags: ['SaaS', 'TypeScript', 'Firebase'],
+    category: "SaaS",
+    slug: 'projeto-beta',
   },
   {
     title: "Projeto Gamma",
-    description: "Uma plataforma de blog e conteúdo pessoal construída com um CMS headless para performance rápida.",
-    tags: ['Blog', 'React', 'GraphQL'],
+    category: "Blog",
+    slug: 'projeto-gamma',
   },
    {
     title: "Projeto Delta",
-    description: "Soluções completas para lojas virtuais, desde o layout até a integração com sistemas de pagamento.",
-    tags: ['Shopify', 'Liquid', 'CI/CD'],
+    category: "Shopify",
+    slug: 'projeto-delta',
+  },
+  {
+    title: "Projeto Epsilon",
+    category: "Branding",
+    slug: 'projeto-epsilon',
+  },
+  {
+    title: "Projeto Zeta",
+    category: "Mobile App",
+    slug: 'projeto-zeta',
   }
 ];
 
 export default function PortfolioSection() {
-  const portfolioProjects = projectImages.slice(0, 4).map((image, index) => ({
+  const portfolioProjects = projectImages.slice(0, 6).map((image, index) => ({
     ...image,
     ...projects[index % projects.length]
   }));
@@ -41,15 +51,15 @@ export default function PortfolioSection() {
             <Link href="#">VER TODOS OS PROJETOS</Link>
           </Button>
         </div>
-        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {portfolioProjects.map((project) => (
             <ProjectCard
               key={project.id}
               imageUrl={project.imageUrl}
               imageHint={project.imageHint}
               title={project.title}
-              description={project.description}
-              tags={project.tags}
+              category={project.category}
+              slug={project.slug}
             />
           ))}
         </div>

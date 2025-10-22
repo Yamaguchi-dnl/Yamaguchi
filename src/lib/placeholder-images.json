@@ -23,6 +23,24 @@
       "description": "Uma plataforma de blog e conteúdo pessoal construída com um CMS headless para performance rápida.",
       "imageUrl": "https://images.unsplash.com/photo-1729575846513-e9ed228f1316?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtaW5pbWFsaXN0JTIwd2Vic2l0ZXxlbnwwfHx8fDE3NjEwMzI0Njl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "minimalist website"
+    },
+    {
+      "id": "project-4",
+      "description": "Uma imagem abstrata com tons de vermelho e laranja.",
+      "imageUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNTc5fDB8MXxzZWFyY2h8MTR8fGFic3RyYWN0fGVufDB8fHx8MTY3ODg4NjM2Mw&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "abstract red"
+    },
+    {
+      "id": "project-5",
+      "description": "Uma folha de ginkgo em um fundo branco.",
+      "imageUrl": "https://images.unsplash.com/photo-1607527963926-5b65b3d6c16c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNTc5fDB8MXxzZWFyY2h8Mnx8Z2lua2dvfGVufDB8fHx8MTY3ODg4NjQyMg&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "ginkgo leaf"
+    },
+    {
+      "id": "project-6",
+      "description": "Uma bicicleta em uma caixa de vidro.",
+      "imageUrl": "https://images.unsplash.com/photo-1593699923348-936a5a2a2c3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNTc5fDB8MXxzZWFyY2h8NXx8YmljeWNsZSUyMGFydHxlbnwwfHx8fDE2Nzg4ODY0NzQ&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "bicycle art"
     }
   ]
 }
