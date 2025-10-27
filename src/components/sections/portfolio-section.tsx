@@ -40,7 +40,7 @@ export default function PortfolioSection() {
             </Button>
           </div>
         </AnimateOnScroll>
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-8">
+        <div className="columns-1 sm:columns-2 gap-8">
           {portfolioProjects.map((project, index) => (
             <AnimateOnScroll 
               key={project.id}
