@@ -45,8 +45,8 @@
     {
       "id": "service-4",
       "description": "Uma imagem representando e-commerce, com uma pessoa fazendo compras online.",
-      "imageUrl": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlY29tbWVyY2V8ZW58MHx8fHwxNzYxNjcyODYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "e-commerce online"
+      "imageUrl": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBzdG9yZXxlbnwwfHx8fDE3NjE2NzMwMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "online store"
     }
   ]
 }
