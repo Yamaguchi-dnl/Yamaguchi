@@ -1,7 +1,5 @@
-import Image from 'next/image';
 import { Badge } from '../ui/badge';
 import AnimateOnScroll from '../animate-on-scroll';
-import { aboutImage } from '@/lib/placeholder-images';
 
 const skills = [
   'UI/UX Design',
@@ -16,26 +14,18 @@ const skills = [
 
 const experiences = [
   {
-    role: 'Freelancer',
-    company: 'Auto-empregado',
-    period: 'Atualmente',
+    role: 'Web designer freelancer',
+    company: 'Freelance',
+    period: 'Jul 2025 - o momento',
   },
   {
-    role: 'Web Designer Sênior',
-    company: 'Creative Minds Studio',
-    period: '2021-2023',
-  },
-  {
-    role: 'UI/UX Designer',
-    company: 'InnovateTech Solutions',
-    period: '2019-2021',
+    role: 'Designer gráfico',
+    company: 'First MKT WEB',
+    period: 'Out 2023 - Ago 2025',
   },
 ];
 
 export default function AboutSection() {
-  if (!aboutImage) {
-    return null;
-  }
   
   return (
     <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-background dark:bg-white text-black">
