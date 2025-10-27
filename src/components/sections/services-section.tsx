@@ -7,16 +7,10 @@ import { serviceImages } from '@/lib/placeholder-images';
 
 const services = [
   {
-    title: "Web Design",
-    description: "Criação de interfaces digitais modernas, intuitivas e responsivas, focadas na experiência do usuário.",
-    tags: ['UI/UX', 'Figma', 'React'],
-    slug: 'web-design',
-  },
-  {
-    title: "Desenvolvimento Web",
-    description: "Desenvolvimento de sites e aplicações web de alta performance com as tecnologias mais recentes.",
-    tags: ['Next.js', 'TypeScript', 'Node.js'],
-    slug: 'web-development',
+    title: "Web Design & Desenvolvimento",
+    description: "Criação de interfaces digitais e desenvolvimento de aplicações web de alta performance com IA.",
+    tags: ['UI/UX', 'Figma', 'Next.js', 'React'],
+    slug: 'web-design-development',
   },
   {
     title: "Estrategista Digital",
@@ -33,7 +27,7 @@ const services = [
 ];
 
 export default function ServicesSection() {
-  const portfolioServices = serviceImages.map((image, index) => ({
+  const portfolioServices = serviceImages.slice(0, 3).map((image, index) => ({
     ...image,
     ...services[index % services.length]
   }));
@@ -49,26 +43,28 @@ export default function ServicesSection() {
             </Button>
           </div>
         </AnimateOnScroll>
-        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2">
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {portfolioServices.map((service, index) => {
-            const isLeftColumn = index % 2 === 0;
-            const animationClass = isLeftColumn ? 'animate-fade-in-left' : 'animate-fade-in-right';
-            
+            let animationClass = 'animate-fade-in-up';
+            if (index === 0) animationClass = 'animate-fade-in-left';
+            if (index === 1) animationClass = 'animate-fade-in-right';
+
             return (
-              <AnimateOnScroll 
-                key={service.id} 
-                animationClassName={animationClass} 
-                className={`[--animation-delay:${200 * (index % 2)}ms]`}
-              >
-                <ServiceCard
-                  imageUrl={service.imageUrl}
-                  imageHint={service.imageHint}
-                  title={service.title}
-                  description={service.description}
-                  tags={service.tags}
-                  slug={service.slug}
-                />
-              </AnimateOnScroll>
+              <div key={service.id} className={index === 2 ? 'md:col-span-2 lg:col-span-1 lg:col-start-2' : ''}>
+                <AnimateOnScroll 
+                  animationClassName={animationClass} 
+                  className={`[--animation-delay:${200 * (index % 2)}ms]`}
+                >
+                  <ServiceCard
+                    imageUrl={service.imageUrl}
+                    imageHint={service.imageHint}
+                    title={service.title}
+                    description={service.description}
+                    tags={service.tags}
+                    slug={service.slug}
+                  />
+                </AnimateOnScroll>
+              </div>
             );
           })}
         </div>
