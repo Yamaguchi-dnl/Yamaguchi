@@ -19,7 +19,7 @@ const experiences = [
     period: 'Jul 2025 - o momento',
   },
   {
-    role: 'Designer gráfico',
+    role: 'Designer gráfico & Estrategista Digital',
     company: 'First MKT WEB',
     period: 'Out 2023 - Ago 2025',
   },
