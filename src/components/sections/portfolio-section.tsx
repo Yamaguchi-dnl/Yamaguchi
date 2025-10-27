@@ -10,7 +10,7 @@ const projects = [
     title: "Projeto Alpha",
     category: "E-commerce",
     slug: 'projeto-alpha',
-    url: 'https://316-barbearia.vercel.app/',
+    url: 'https://aquila-flame.vercel.app/',
   },
   {
     title: "Projeto Beta",
