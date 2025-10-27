@@ -6,6 +6,10 @@ import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
   title: 'Daniel Yamaguchi | Portfolio',
   description: 'Portfolio of Daniel Yamaguchi, Full-Stack Developer.',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({
