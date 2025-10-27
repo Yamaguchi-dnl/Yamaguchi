@@ -51,14 +51,10 @@ export default function ServicesSection() {
         </AnimateOnScroll>
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2">
           {portfolioServices.map((service, index) => {
-             let animationClass = 'animate-fade-in-up';
-             if (index % 2 === 0) animationClass = 'animate-fade-in-left';
-             else animationClass = 'animate-fade-in-right';
-
             return (
               <div key={service.id}>
                 <AnimateOnScroll 
-                  animationClassName={animationClass} 
+                  animationClassName="animate-fade-in-up"
                   className={`[--animation-delay:${200 * (index % 2)}ms]`}
                 >
                   <ServiceCard
