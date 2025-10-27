@@ -7,7 +7,9 @@ export const metadata: Metadata = {
   title: 'Daniel Yamaguchi | Portfolio',
   description: 'Portfolio of Daniel Yamaguchi, Full-Stack Developer.',
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any', type: 'image/x-icon' },
+    ],
     apple: '/apple-touch-icon.png',
   },
 };
