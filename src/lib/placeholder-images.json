@@ -23,6 +23,30 @@
       "description": "Uma plataforma de blog e conteúdo pessoal construída com um CMS headless para performance rápida.",
       "imageUrl": "https://ik.imagekit.io/leosmc2zb/PORTF%C3%93LIO/Prancheta%201%20copiar.png?updatedAt=1761587315976",
       "imageHint": "minimalist website"
+    },
+    {
+      "id": "service-1",
+      "description": "Uma imagem representando web design.",
+      "imageUrl": "https://images.unsplash.com/photo-1636760243166-c2c0c62ba633?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMGRlc2lnbnxlbnwwfHx8fDE3NjE1MzE0NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract design"
+    },
+    {
+      "id": "service-2",
+      "description": "Uma imagem representando desenvolvimento web.",
+      "imageUrl": "https://images.unsplash.com/photo-1566837945700-30057527ade0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb2RlJTIwZWRpdG9yfGVufDB8fHx8MTc2MTUzNTkzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "code editor"
+    },
+    {
+      "id": "service-3",
+      "description": "Uma imagem representando estratégia digital.",
+      "imageUrl": "https://images.unsplash.com/photo-1759661966728-4a02e3c6ed91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYXJrZXRpbmclMjBjaGFydHxlbnwwfHx8fDE3NjE1MTMwNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "marketing chart"
+    },
+    {
+      "id": "service-4",
+      "description": "Uma imagem representando e-commerce.",
+      "imageUrl": "https://images.unsplash.com/photo-1487014679447-9f8336841d58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxvbmxpbmUlMjBzdG9yZXxlbnwwfHx8fDE3NjE1NDEwNzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "online store"
     }
   ]
 }

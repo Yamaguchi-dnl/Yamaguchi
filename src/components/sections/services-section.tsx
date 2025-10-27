@@ -3,7 +3,7 @@ import { Button } from '../ui/button';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import AnimateOnScroll from '../animate-on-scroll';
-import { projectImages } from '@/lib/placeholder-images';
+import { serviceImages } from '@/lib/placeholder-images';
 
 const services = [
   {
@@ -33,7 +33,7 @@ const services = [
 ];
 
 export default function ServicesSection() {
-  const portfolioServices = projectImages.slice(0, 4).map((image, index) => ({
+  const portfolioServices = serviceImages.map((image, index) => ({
     ...image,
     ...services[index % services.length]
   }));
