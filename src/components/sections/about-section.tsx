@@ -47,7 +47,7 @@ export default function AboutSection() {
             <AnimateOnScroll animationClassName="animate-fade-in-up">
               <h2 className="text-3xl sm:text-4xl font-semibold tracking-tighter uppercase">Sobre Mim</h2>
               <p className="mt-4 text-muted-foreground tracking-tight">
-                Olá, sou Daniel Yamaguchi. Minha missão é transformar ideias em realidade digital. Como Web Designer e Estrategista Digital, uno design de ponta com desenvolvimento focado em resultados. Sou especialista em criar identidades de marca marcantes e experiências de usuário (UI/UX) que não só encantam, mas também convertem. Com um arsenal que vai do Figma e Photoshop ao Next.js, construo soluções digitais que impulsionam o crescimento e estabelecem uma presença online inesquecível para cada marca.
+                Olá, sou Daniel Yamaguchi, Web Designer e Estrategista Digital. Minha paixão é transformar ideias em realidade digital, combinando design criativo com desenvolvimento focado em resultados. Sou especialista em criar identidades de marca e experiências de usuário (UI/UX) que encantam, convertem e impulsionam o crescimento de cada negócio.
               </p>
             </AnimateOnScroll>
 
