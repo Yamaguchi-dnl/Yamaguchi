@@ -30,6 +30,8 @@ export default function AnimateOnScroll({
             if (triggerOnce && ref.current) {
               observer.unobserve(ref.current);
             }
+          } else if (!triggerOnce) {
+            setIsVisible(false);
           }
         });
       },
