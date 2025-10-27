@@ -54,8 +54,8 @@ export default function AnimateOnScroll({
     <div
       ref={ref}
       className={cn(
-        'transition-opacity duration-1000',
-        isIntersecting ? 'opacity-100' : 'opacity-0',
+        'opacity-0', // Começa invisível
+        isIntersecting ? 'opacity-100' : '',
         isIntersecting ? animationClassName : '',
         className
       )}
