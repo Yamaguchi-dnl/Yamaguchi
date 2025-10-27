@@ -23,11 +23,17 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'https-studio',
         hostname: 'picsum.photos',
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'ik.imagekit.io',
+        port: '',
+        pathname: '/**',
+      }
     ],
   },
 };
