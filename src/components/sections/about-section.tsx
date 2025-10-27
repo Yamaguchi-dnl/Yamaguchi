@@ -40,10 +40,10 @@ export default function AboutSection() {
   return (
     <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-background dark:bg-white text-black">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1">
           
           {/* Coluna de Texto */}
-          <div className="lg:col-span-3 flex flex-col gap-8">
+          <div className="flex flex-col gap-8">
             <AnimateOnScroll animationClassName="animate-fade-in-up">
               <h2 className="text-3xl sm:text-4xl font-semibold tracking-tighter uppercase">Sobre Mim</h2>
               <p className="mt-4 text-muted-foreground tracking-tight">
@@ -77,21 +77,6 @@ export default function AboutSection() {
               </div>
             </AnimateOnScroll>
           </div>
-
-          {/* Coluna da Imagem */}
-          <div className="lg:col-span-2 w-full">
-            <AnimateOnScroll animationClassName="animate-fade-in-up" className="[--animation-delay:200ms]">
-              <Image
-                src={aboutImage.imageUrl}
-                alt={aboutImage.description}
-                data-ai-hint={aboutImage.imageHint}
-                width={600}
-                height={800}
-                className="object-cover w-full h-[600px] rounded-lg shadow-lg"
-              />
-            </AnimateOnScroll>
-          </div>
-
         </div>
       </div>
     </section>
