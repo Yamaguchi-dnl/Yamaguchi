@@ -18,24 +18,24 @@ export default function AnimateOnScroll({
   threshold = 0.1,
   triggerOnce = true,
 }: AnimateOnScrollProps) {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isIntersecting, setIntersecting] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            if (triggerOnce && ref.current) {
-              observer.unobserve(ref.current);
-            }
-          } else if (!triggerOnce) {
-            setIsVisible(false);
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIntersecting(true);
+          if (triggerOnce && ref.current) {
+            observer.unobserve(ref.current);
           }
-        });
+        } else if (!triggerOnce) {
+            setIntersecting(false);
+        }
       },
-      { threshold }
+      {
+        threshold,
+      }
     );
 
     const currentRef = ref.current;
@@ -53,7 +53,12 @@ export default function AnimateOnScroll({
   return (
     <div
       ref={ref}
-      className={cn('transition-opacity duration-1000', isVisible ? 'opacity-100' : 'opacity-0', isVisible ? animationClassName : '', className)}
+      className={cn(
+        'transition-opacity duration-1000',
+        isIntersecting ? 'opacity-100' : 'opacity-0',
+        isIntersecting ? animationClassName : '',
+        className
+      )}
     >
       {children}
     </div>
