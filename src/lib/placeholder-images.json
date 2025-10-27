@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "about-portrait",
-      "description": "Retrato de Daniel Yamaguchi",
-      "imageUrl": "https://images.unsplash.com/photo-1583195763986-0231686dcd43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjExNDUzMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "man portrait"
+      "description": "Uma imagem representando um construtor de sites, ilustrando o processo de design e desenvolvimento.",
+      "imageUrl": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3ZWIlMjBkZXNpZ258ZW58MHx8fHwxNzYxNjA0ODg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "website builder"
     },
     {
       "id": "project-1",
@@ -26,27 +26,27 @@
     },
     {
       "id": "service-1",
-      "description": "Uma imagem representando web design.",
-      "imageUrl": "https://images.unsplash.com/photo-1636760243166-c2c0c62ba633?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMGRlc2lnbnxlbnwwfHx8fDE3NjE1MzE0NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "abstract design"
+      "description": "Uma imagem representando web design, mostrando uma interface de usuário sendo projetada.",
+      "imageUrl": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxVSSUyMGRlc2lnbnxlbnwwfHx8fDE3NjE2NzI3NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "UI design"
     },
     {
       "id": "service-2",
-      "description": "Uma imagem representando desenvolvimento web.",
-      "imageUrl": "https://images.unsplash.com/photo-1566837945700-30057527ade0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb2RlJTIwZWRpdG9yfGVufDB8fHx8MTc2MTUzNTkzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "code editor"
+      "description": "Uma imagem representando desenvolvimento web, com código em um editor.",
+      "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb2Rpbmd8ZW58MHx8fHwxNzYxNjcyNzk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coding screen"
     },
     {
       "id": "service-3",
-      "description": "Uma imagem representando estratégia digital.",
-      "imageUrl": "https://images.unsplash.com/photo-1759661966728-4a02e3c6ed91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYXJrZXRpbmclMjBjaGFydHxlbnwwfHx8fDE3NjE1MTMwNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "marketing chart"
+      "description": "Uma imagem representando estratégia digital, com gráficos de análise e métricas.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmFseXRpY3MlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzYxNjcyODMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "analytics dashboard"
     },
     {
       "id": "service-4",
-      "description": "Uma imagem representando e-commerce.",
-      "imageUrl": "https://images.unsplash.com/photo-1487014679447-9f8336841d58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxvbmxpbmUlMjBzdG9yZXxlbnwwfHx8fDE3NjE1NDEwNzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "online store"
+      "description": "Uma imagem representando e-commerce, com uma pessoa fazendo compras online.",
+      "imageUrl": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlY29tbWVyY2V8ZW58MHx8fHwxNzYxNjcyODYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "e-commerce online"
     }
   ]
 }
