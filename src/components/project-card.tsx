@@ -26,7 +26,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ imageUrl, imageHint, title, slug })
         <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
         <div className="absolute inset-0 flex flex-col justify-end p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
           <Button variant="secondary" className="w-full justify-between bg-white/30 backdrop-blur-sm text-white hover:bg-white/40">
-            VER ESTUDO DE CASO
+            VER SITE
             <ArrowUpRight className="h-4 w-4" />
           </Button>
         </div>
