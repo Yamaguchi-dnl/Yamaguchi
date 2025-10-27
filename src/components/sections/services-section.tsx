@@ -23,11 +23,17 @@ const services = [
     description: "Soluções completas para lojas virtuais, desde o layout até a integração com sistemas de pagamento.",
     tags: ['Shopify', 'WooCommerce', 'Stripe'],
     slug: 'e-commerce',
+  },
+  {
+    title: "Social Media",
+    description: "Gerenciamento de redes sociais, criação de conteúdo e campanhas para aumentar o alcance e engajamento.",
+    tags: ['Instagram', 'Facebook', 'Canva'],
+    slug: 'social-media',
   }
 ];
 
 export default function ServicesSection() {
-  const portfolioServices = serviceImages.slice(0, 3).map((image, index) => ({
+  const portfolioServices = serviceImages.slice(0, 4).map((image, index) => ({
     ...image,
     ...services[index % services.length]
   }));
@@ -43,14 +49,14 @@ export default function ServicesSection() {
             </Button>
           </div>
         </AnimateOnScroll>
-        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2">
           {portfolioServices.map((service, index) => {
-            let animationClass = 'animate-fade-in-up';
-            if (index === 0) animationClass = 'animate-fade-in-left';
-            if (index === 1) animationClass = 'animate-fade-in-right';
+             let animationClass = 'animate-fade-in-up';
+             if (index % 2 === 0) animationClass = 'animate-fade-in-left';
+             else animationClass = 'animate-fade-in-right';
 
             return (
-              <div key={service.id} className={index === 2 ? 'md:col-span-2 lg:col-span-1 lg:col-start-2' : ''}>
+              <div key={service.id}>
                 <AnimateOnScroll 
                   animationClassName={animationClass} 
                   className={`[--animation-delay:${200 * (index % 2)}ms]`}

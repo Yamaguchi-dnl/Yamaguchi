@@ -32,21 +32,21 @@
     },
     {
       "id": "service-2",
-      "description": "Uma imagem representando desenvolvimento web, com código em um editor.",
-      "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb2Rpbmd8ZW58MHx8fHwxNzYxNjcyNzk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "coding screen"
-    },
-    {
-      "id": "service-3",
       "description": "Uma imagem representando estratégia digital, com gráficos de análise e métricas.",
       "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmFseXRpY3MlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzYxNjcyODMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "analytics dashboard"
     },
     {
-      "id": "service-4",
+      "id": "service-3",
       "description": "Uma imagem representando e-commerce, com uma pessoa fazendo compras online.",
-      "imageUrl": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBzdG9yZXxlbnwwfHx8fDE3NjE2NzMwMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "online store"
+      "imageUrl": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      "imageHint": "online payment"
+    },
+    {
+      "id": "service-4",
+      "description": "Uma imagem representando mídias sociais, com vários ícones de redes sociais.",
+      "imageUrl": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYXxlbnwwfHx8fDE3NjE2NzQwODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "social media"
     }
   ]
 }
