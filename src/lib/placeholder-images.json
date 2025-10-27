@@ -23,60 +23,6 @@
       "description": "Uma plataforma de blog e conteúdo pessoal construída com um CMS headless para performance rápida.",
       "imageUrl": "https://ik.imagekit.io/leosmc2zb/PORTF%C3%93LIO/Prancheta%201%20copiar.png?updatedAt=1761587315976",
       "imageHint": "minimalist website"
-    },
-    {
-      "id": "project-4",
-      "description": "Uma imagem abstrata com tons de vermelho e laranja.",
-      "imageUrl": "https://images.unsplash.com/photo-1567360425618-1594206637d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMHJlZHxlbnwwfHx8fDE3NjEwNDgyMTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "abstract red"
-    },
-    {
-      "id": "project-5",
-      "description": "Uma folha de ginkgo em um fundo branco.",
-      "imageUrl": "https://images.unsplash.com/photo-1604397597902-e782aa581c59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnaW5rZ28lMjBsZWFmfGVufDB8fHx8MTc2MTE1MjQ5OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ginkgo leaf"
-    },
-    {
-      "id": "project-6",
-      "description": "Uma bicicleta em uma caixa de vidro.",
-      "imageUrl": "https://images.unsplash.com/photo-1758275386995-75fa2bdec389?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiaWN5Y2xlJTIwYXJ0fGVufDB8fHx8MTc2MTE1MjQ5OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bicycle art"
-    },
-    {
-      "id": "project-7",
-      "description": "Uma visão arquitetônica de um edifício moderno.",
-      "imageUrl": "https://images.unsplash.com/photo-1546349851-64285be8e9fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzYxMDc2OTIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "modern architecture"
-    },
-    {
-      "id": "project-8",
-      "description": "Fotografia de produto para uma marca de cosméticos.",
-      "imageUrl": "https://images.unsplash.com/photo-1701271482230-5ecaec3cd3e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3NtZXRpY3MlMjBwcm9kdWN0fGVufDB8fHx8MTc2MTE1MjQ5OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cosmetics product"
-    },
-    {
-      "id": "project-9",
-      "description": "Interface de aplicativo móvel para uma startup de fintech.",
-      "imageUrl": "https://images.unsplash.com/photo-1660673868711-981d95202f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW50ZWNoJTIwYXBwfGVufDB8fHx8MTc2MTA3NDIzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fintech app"
-    },
-    {
-      "id": "project-10",
-      "description": "Branding e design de embalagem para uma marca de café.",
-      "imageUrl": "https://images.unsplash.com/photo-1513521773210-0cc22dfee8db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBicmFuZGluZ3xlbnwwfHx8fDE3NjExNTI1MDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "coffee branding"
-    },
-    {
-      "id": "project-11",
-      "description": "Site de portfólio para um fotógrafo.",
-      "imageUrl": "https://images.unsplash.com/photo-1743446770828-180040aba491?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaG90b2dyYXBoeSUyMHBvcnRmb2xpb3xlbnwwfHx8fDE3NjExNTI0OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "photography portfolio"
-    },
-    {
-      "id": "project-12",
-      "description": "Campanha de marketing de mídia social para uma marca de moda.",
-      "imageUrl": "https://images.unsplash.com/flagged/photo-1565241572347-2506e38cb16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmYXNoaW9uJTIwY2FtcGFpZ258ZW58MHx8fHwxNzYxMTUyNDk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fashion campaign"
     }
   ]
 }
