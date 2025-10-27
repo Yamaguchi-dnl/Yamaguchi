@@ -43,7 +43,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex h-14 items-center justify-between px-4 md:px-6">
         {/* Left Column */}
         <div className="flex flex-1 justify-start">
-            <a href="#home" className="flex items-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-muted-foreground invisible md:hidden" onClick={(e) => handleLinkClick(e, '#contact')}>
+            <a href="http://wa.me/5541995824179" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-muted-foreground invisible md:hidden">
               ENTRAR EM CONTATO
               <span className="bg-primary text-primary-foreground rounded-full p-1.5 hover:bg-primary/90 transition-colors">
                 <ArrowUpRight className="h-4 w-4" />
@@ -62,7 +62,7 @@ export default function Header() {
 
         {/* Right Column */}
         <div className="hidden md:flex flex-1 justify-end items-center">
-           <a href="#contact" className="flex items-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-muted-foreground" onClick={(e) => handleLinkClick(e, '#contact')}>
+           <a href="http://wa.me/5541995824179" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-muted-foreground">
               ENTRAR EM CONTATO
               <span className="bg-primary text-primary-foreground rounded-full p-1.5 hover:bg-primary/90 transition-colors">
                 <ArrowUpRight className="h-4 w-4" />
@@ -86,7 +86,7 @@ export default function Header() {
                     {link.label}
                   </a>
                 ))}
-                 <a href="#contact" className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground" onClick={(e) => handleLinkClick(e, '#contact')}>
+                 <a href="http://wa.me/5541995824179" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground">
                     ENTRAR EM CONTATO
                      <span className="bg-primary text-primary-foreground rounded-full p-1.5 hover:bg-primary/90 transition-colors">
                         <ArrowUpRight className="h-4 w-4" />
