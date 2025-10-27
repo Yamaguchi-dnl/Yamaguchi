@@ -10,11 +10,12 @@ interface ProjectCardProps {
   title: string;
   category: string;
   slug: string;
+  url: string;
 }
 
-const ProjectCard: FC<ProjectCardProps> = ({ imageUrl, imageHint, title, slug }) => {
+const ProjectCard: FC<ProjectCardProps> = ({ imageUrl, imageHint, title, slug, url }) => {
   return (
-    <a href="https://316-barbearia.vercel.app/" target="_blank" rel="noopener noreferrer" className="group relative block overflow-hidden break-inside-avoid mb-8">
+    <a href={url} target="_blank" rel="noopener noreferrer" className="group relative block overflow-hidden break-inside-avoid mb-8">
         <Image
           src={imageUrl}
           alt={title}

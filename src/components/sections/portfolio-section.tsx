@@ -10,16 +10,19 @@ const projects = [
     title: "Projeto Alpha",
     category: "E-commerce",
     slug: 'projeto-alpha',
+    url: 'https://316-barbearia.vercel.app/',
   },
   {
     title: "Projeto Beta",
     category: "SaaS",
     slug: 'projeto-beta',
+    url: 'https://lp-yamaguchi.vercel.app/',
   },
   {
     title: "Projeto Gamma",
     category: "Blog",
     slug: 'projeto-gamma',
+    url: 'https://adv-yamaguchi.vercel.app/',
   }
 ];
 
@@ -53,6 +56,7 @@ export default function PortfolioSection() {
                 title={project.title}
                 category={project.category}
                 slug={project.slug}
+                url={project.url}
               />
             </AnimateOnScroll>
           ))}
