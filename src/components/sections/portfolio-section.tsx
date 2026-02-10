@@ -25,15 +25,9 @@ const projects = [
     url: '#',
   },
   {
-    title: "Projeto Delta",
+    title: "Projeto ASAP",
     category: "Website",
-    slug: 'projeto-delta',
-    url: '#',
-  },
-  {
-    title: "Projeto Epsilon",
-    category: "Website",
-    slug: 'projeto-epsilon',
+    slug: 'projeto-asap',
     url: 'https://asap-bay.vercel.app/',
   }
 ];
@@ -47,7 +41,7 @@ export default function PortfolioSection() {
   return (
     <section id="portfolio" className="w-full py-12 md:py-24 lg:py-32 bg-background dark:bg-white text-black overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <AnimateOnScroll animationClassName="animate-fade-in-up">
+        <AnimateOnScroll animationClassName="animate-fade-up">
           <div className="flex items-center justify-between mb-12 border-b border-border/40 pb-4">
             <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl uppercase text-black">Portfólio</h2>
             <Button asChild variant="link" className="hidden sm:inline-flex text-black">
@@ -59,7 +53,7 @@ export default function PortfolioSection() {
           {portfolioProjects.map((project, index) => (
             <AnimateOnScroll 
               key={project.id}
-              animationClassName="animate-fade-in-up"
+              animationClassName="animate-fade-up"
             >
               <ProjectCard
                 imageUrl={project.imageUrl}
