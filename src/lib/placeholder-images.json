@@ -25,6 +25,12 @@
       "imageHint": "minimalist website"
     },
     {
+      "id": "project-4",
+      "description": "Novo projeto de site adicionado ao portfólio.",
+      "imageUrl": "https://ik.imagekit.io/leosmc2zb/PULSOASAP/Prancheta%201%20copiar%203.png",
+      "imageHint": "website concept"
+    },
+    {
       "id": "service-1",
       "description": "Uma imagem representando web design, mostrando uma interface de usuário sendo projetada.",
       "imageUrl": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxVSSUyMGRlc2lnbnxlbnwwfHx8fDE3NjE2NzI3NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",

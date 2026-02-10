@@ -23,6 +23,12 @@ const projects = [
     category: "Blog",
     slug: 'projeto-gamma',
     url: '#',
+  },
+  {
+    title: "Projeto Delta",
+    category: "Website",
+    slug: 'projeto-delta',
+    url: '#',
   }
 ];
 
