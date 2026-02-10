@@ -29,8 +29,6 @@ export default function AnimateOnScroll({
           if (triggerOnce && ref.current) {
             observer.unobserve(ref.current);
           }
-        } else if (!triggerOnce) {
-            setIntersecting(false);
         }
       },
       {
@@ -54,9 +52,7 @@ export default function AnimateOnScroll({
     <div
       ref={ref}
       className={cn(
-        'opacity-0', // Começa invisível
-        isIntersecting ? 'opacity-100' : '',
-        isIntersecting ? animationClassName : '',
+        isIntersecting ? animationClassName : 'opacity-0',
         className
       )}
     >
