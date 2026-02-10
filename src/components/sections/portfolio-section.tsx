@@ -29,6 +29,12 @@ const projects = [
     category: "Website",
     slug: 'projeto-delta',
     url: '#',
+  },
+  {
+    title: "Projeto Epsilon",
+    category: "Website",
+    slug: 'projeto-epsilon',
+    url: 'https://asap-bay.vercel.app/',
   }
 ];
 
