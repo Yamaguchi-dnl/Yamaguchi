@@ -13,7 +13,7 @@ export default function ContactSection() {
             </p>
           </div>
         </AnimateOnScroll>
-        <AnimateOnScroll animationClassName="animate-fade-in-up" className="[--animation-delay:200ms]">
+        <AnimateOnScroll animationClassName="animate-fade-in-up">
           <div className="mx-auto w-full max-w-md">
             <ContactForm />
           </div>

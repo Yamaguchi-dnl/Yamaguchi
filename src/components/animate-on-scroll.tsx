@@ -47,12 +47,20 @@ export default function AnimateOnScroll({
       }
     };
   }, [threshold, triggerOnce]);
+  
+  const getInitialTransform = (animClass: string) => {
+    if (animClass.includes('down')) return 'transform -translate-y-10';
+    if (animClass.includes('left')) return 'transform -translate-x-10';
+    if (animClass.includes('right')) return 'transform translate-x-10';
+    return 'transform translate-y-10';
+  };
 
   return (
     <div
       ref={ref}
       className={cn(
-        isIntersecting ? animationClassName : 'opacity-0',
+        'transition-all ease-out duration-1000',
+        isIntersecting ? 'opacity-100 translate-y-0 translate-x-0' : `opacity-0 ${getInitialTransform(animationClassName)}`,
         className
       )}
     >

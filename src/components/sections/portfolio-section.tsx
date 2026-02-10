@@ -48,7 +48,6 @@ export default function PortfolioSection() {
             <AnimateOnScroll 
               key={project.id}
               animationClassName="animate-fade-in-up"
-              className={`[--animation-delay:${index * 150}ms]`}
             >
               <ProjectCard
                 imageUrl={project.imageUrl}

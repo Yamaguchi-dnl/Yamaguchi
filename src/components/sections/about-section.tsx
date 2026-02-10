@@ -41,21 +41,21 @@ export default function AboutSection() {
               </p>
             </AnimateOnScroll>
 
-            <AnimateOnScroll animationClassName="animate-fade-in-up" className="[--animation-delay:200ms]">
+            <AnimateOnScroll animationClassName="animate-fade-in-up">
                 <hr className="border-t border-border/40" />
             </AnimateOnScroll>
             
-            <AnimateOnScroll animationClassName="animate-fade-in-up" className="[--animation-delay:300ms]">
+            <AnimateOnScroll animationClassName="animate-fade-in-up">
               <div className="flex flex-wrap gap-2">
                 {skills.map(skill => <Badge key={skill} variant="secondary">{skill}</Badge>)}
               </div>
             </AnimateOnScroll>
 
-            <AnimateOnScroll animationClassName="animate-fade-in-up" className="[--animation-delay:400ms]">
+            <AnimateOnScroll animationClassName="animate-fade-in-up">
                  <hr className="border-t border-border/40" />
             </AnimateOnScroll>
             
-            <AnimateOnScroll animationClassName="animate-fade-in-up" className="[--animation-delay:500ms]">
+            <AnimateOnScroll animationClassName="animate-fade-in-up">
               <div className="space-y-6">
                 {experiences.map(exp => (
                   <div key={exp.company} className="grid grid-cols-3 gap-4 items-start text-sm">

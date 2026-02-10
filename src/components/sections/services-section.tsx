@@ -55,7 +55,6 @@ export default function ServicesSection() {
               <div key={service.id}>
                 <AnimateOnScroll 
                   animationClassName="animate-fade-in-up"
-                  className={`[--animation-delay:${200 * (index % 2)}ms]`}
                 >
                   <ServiceCard
                     imageUrl={service.imageUrl}
