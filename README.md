@@ -1,7 +1,12 @@
-# Firebase Studio
+# Daniel Yamaguchi - Portfolio
 
-This is a NextJS starter in Firebase Studio.
+Portfolio profissional de Daniel Yamaguchi, Web Designer e Estrategista Digital.
 
-To get started, take a look at src/app/page.tsx.
-# Yamaguchi
-# Yamaguchi
+## Tecnologias Utilizadas
+
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- Shadcn UI
+- Lucide Icons
+- Animações customizadas de scroll
