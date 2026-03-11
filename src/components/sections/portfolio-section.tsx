@@ -1,3 +1,4 @@
+
 import { projectImages } from '@/lib/placeholder-images';
 import ProjectCard from '@/components/project-card';
 import { Button } from '../ui/button';
@@ -29,6 +30,12 @@ const projects = [
     category: "Website",
     slug: 'projeto-asap',
     url: 'https://asap-bay.vercel.app/',
+  },
+  {
+    title: "Projeto IAP",
+    category: "Institucional",
+    slug: 'projeto-iap',
+    url: 'https://comunicacao.iapbarreirinha.com.br/',
   }
 ];
 
