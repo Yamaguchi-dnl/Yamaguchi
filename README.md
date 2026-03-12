@@ -1,12 +1,17 @@
 # Daniel Yamaguchi - Portfolio
 
-Portfolio profissional de Daniel Yamaguchi, Web Designer e Estrategista Digital.
+Portfolio profissional de Daniel Yamaguchi, Designer Gráfico e Estrategista Digital.
+
+## Foco
+
+- Design Gráfico & Branding
+- Estratégia Digital
+- UI/UX Design
+- Identidade Visual
 
 ## Tecnologias Utilizadas
 
 - Next.js (App Router)
-- React
 - Tailwind CSS
 - Shadcn UI
 - Lucide Icons
-- Animações customizadas de scroll

@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 interface AnimateOnScrollProps {
   children: ReactNode;
   className?: string;
-  animationClassName: string;
+  animationClassName?: string;
   threshold?: number;
   triggerOnce?: boolean;
 }
@@ -14,7 +14,7 @@ interface AnimateOnScrollProps {
 export default function AnimateOnScroll({
   children,
   className,
-  animationClassName,
+  animationClassName = 'animate-fade-up',
   threshold = 0.1,
   triggerOnce = true,
 }: AnimateOnScrollProps) {
@@ -49,6 +49,7 @@ export default function AnimateOnScroll({
   }, [threshold, triggerOnce]);
   
   const getInitialTransform = (animClass: string) => {
+    if (!animClass) return 'transform translate-y-10';
     if (animClass.includes('down')) return 'transform -translate-y-10';
     if (animClass.includes('left')) return 'transform -translate-x-10';
     if (animClass.includes('right')) return 'transform translate-x-10';

@@ -7,28 +7,28 @@ import { serviceImages } from '@/lib/placeholder-images';
 
 const services = [
   {
-    title: "Web Design & Desenvolvimento",
-    description: "Criação de interfaces digitais e desenvolvimento de aplicações web de alta performance com IA.",
-    tags: ['UI/UX', 'Figma', 'Next.js', 'React'],
-    slug: 'web-design-development',
+    title: "Identidade Visual & UI Design",
+    description: "Criação de logotipos, paletas de cores e interfaces digitais que transmitem a essência da sua marca.",
+    tags: ['Branding', 'Logotipo', 'UI/UX', 'Figma'],
+    slug: 'visual-identity',
   },
   {
-    title: "Estrategista Digital",
-    description: "Planejamento e execução de estratégias digitais para impulsionar o crescimento e o engajamento da marca.",
-    tags: ['SEO', 'Marketing de Conteúdo', 'Analytics'],
+    title: "Estratégia Digital",
+    description: "Planejamento e execução de estratégias de presença online para impulsionar o engajamento e resultados.",
+    tags: ['Marketing', 'Posicionamento', 'Conteúdo'],
     slug: 'digital-strategy',
   },
    {
-    title: "E-commerce",
-    description: "Soluções completas para lojas virtuais, desde o layout até a integração com sistemas de pagamento.",
-    tags: ['Shopify', 'WooCommerce', 'Stripe'],
-    slug: 'e-commerce',
+    title: "Social Media Design",
+    description: "Criação de posts, stories e assets visuais estratégicos para redes sociais de alto impacto.",
+    tags: ['Instagram', 'Conteúdo Visual', 'Engajamento'],
+    slug: 'social-media',
   },
   {
-    title: "Social Media",
-    description: "Gerenciamento de redes sociais, criação de conteúdo e campanhas para aumentar o alcance e engajamento.",
-    tags: ['Instagram', 'Facebook', 'Canva'],
-    slug: 'social-media',
+    title: "Direção de Arte",
+    description: "Coordenação estética e visual para campanhas e projetos de design de alto padrão.",
+    tags: ['Conceito', 'Composição', 'Criatividade'],
+    slug: 'art-direction',
   }
 ];
 
@@ -41,7 +41,7 @@ export default function ServicesSection() {
   return (
     <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-background">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <AnimateOnScroll animationClassName="animate-fade-in-down">
+        <AnimateOnScroll>
           <div className="flex items-center justify-between mb-12 border-b border-border/40 pb-4">
             <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl uppercase">Serviços</h2>
             <Button asChild variant="link" className="hidden sm:inline-flex">
@@ -50,12 +50,10 @@ export default function ServicesSection() {
           </div>
         </AnimateOnScroll>
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2">
-          {portfolioServices.map((service, index) => {
+          {portfolioServices.map((service) => {
             return (
               <div key={service.id}>
-                <AnimateOnScroll 
-                  animationClassName="animate-fade-in-up"
-                >
+                <AnimateOnScroll>
                   <ServiceCard
                     imageUrl={service.imageUrl}
                     imageHint={service.imageHint}
@@ -70,7 +68,7 @@ export default function ServicesSection() {
           })}
         </div>
          <div className="mt-12 text-center sm:hidden">
-          <AnimateOnScroll animationClassName="animate-fade-in-up">
+          <AnimateOnScroll>
             <Button asChild variant="link">
                 <Link href="#">VER TODOS OS SERVIÇOS <ArrowUpRight className="ml-2 h-4 w-4" /></Link>
             </Button>

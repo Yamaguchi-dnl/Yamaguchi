@@ -2,24 +2,24 @@ import { Badge } from '../ui/badge';
 import AnimateOnScroll from '../animate-on-scroll';
 
 const skills = [
-  'UI/UX Design',
-  'Web Design',
+  'Design Gráfico',
+  'Identidade Visual',
   'Branding',
-  'Desenvolvimento Web',
-  'Next.js',
+  'UI/UX Design',
+  'Estratégia Digital',
+  'Social Media',
   'Figma',
   'Photoshop',
-  'Estrategia Digital',
 ];
 
 const experiences = [
   {
-    role: 'Web designer freelancer',
+    role: 'Designer Gráfico Freelancer',
     company: 'Freelance',
     period: 'Jul 2025 - o momento',
   },
   {
-    role: 'Designer gráfico & Estrategista Digital',
+    role: 'Designer Gráfico & Estrategista Digital',
     company: 'First MKT WEB',
     period: 'Out 2023 - Ago 2025',
   },
@@ -34,28 +34,28 @@ export default function AboutSection() {
           
           {/* Coluna de Texto */}
           <div className="flex flex-col gap-8">
-            <AnimateOnScroll animationClassName="animate-fade-in-up">
+            <AnimateOnScroll>
               <h2 className="text-3xl sm:text-4xl font-semibold tracking-tighter uppercase">Sobre Mim</h2>
               <p className="mt-4 text-muted-foreground tracking-tight">
-                Sou Daniel Yamaguchi, Web Designer e Estrategista Digital. Minha paixão é transformar ideias em realidade digital, combinando design criativo com desenvolvimento focado em resultados. Sou especialista em criar identidades de marca e experiências de usuário (UI/UX) que encantam, convertem e impulsionam o crescimento de cada negócio.
+                Sou Daniel Yamaguchi, Designer Gráfico e Estrategista Digital. Minha paixão é transformar ideias em realidade visual, combinando criatividade com estratégia focada em resultados. Sou especialista em criar identidades de marca marcantes e experiências digitais que encantam, comunicam e impulsionam o crescimento de cada negócio.
               </p>
             </AnimateOnScroll>
 
-            <AnimateOnScroll animationClassName="animate-fade-in-up">
+            <AnimateOnScroll>
                 <hr className="border-t border-border/40" />
             </AnimateOnScroll>
             
-            <AnimateOnScroll animationClassName="animate-fade-in-up">
+            <AnimateOnScroll>
               <div className="flex flex-wrap gap-2">
                 {skills.map(skill => <Badge key={skill} variant="secondary">{skill}</Badge>)}
               </div>
             </AnimateOnScroll>
 
-            <AnimateOnScroll animationClassName="animate-fade-in-up">
+            <AnimateOnScroll>
                  <hr className="border-t border-border/40" />
             </AnimateOnScroll>
             
-            <AnimateOnScroll animationClassName="animate-fade-in-up">
+            <AnimateOnScroll>
               <div className="space-y-6">
                 {experiences.map(exp => (
                   <div key={exp.company} className="grid grid-cols-3 gap-4 items-start text-sm">
