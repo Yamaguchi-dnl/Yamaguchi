@@ -11,7 +11,7 @@ export default function HeroSection() {
         </AnimateOnScroll>
         <AnimateOnScroll>
           <p className="mt-8 text-lg text-white/80">
-            DESIGNER GRÁFICO & ESTRATEGISTA DIGITAL
+            DESIGNER GRÁFICO, WEB DESIGNER & ESTRATEGISTA DIGITAL
           </p>
         </AnimateOnScroll>
       </div>

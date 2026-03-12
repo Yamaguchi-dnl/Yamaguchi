@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 
 
 export const metadata: Metadata = {
-  title: 'Daniel Yamaguchi | Designer Gráfico e Estrategista Digital',
-  description: 'Portfólio profissional de Daniel Yamaguchi, Designer Gráfico e Estrategista Digital especializado em identidades visuais e presença online.',
+  title: 'Daniel Yamaguchi | Designer Gráfico, Web Designer e Estrategista Digital',
+  description: 'Portfólio profissional de Daniel Yamaguchi, Designer Gráfico, Web Designer e Estrategista Digital especializado em identidades visuais e presença online.',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
